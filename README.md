@@ -10,6 +10,9 @@ To create an application that can be used to track beef selections and prefences
 # Demo Features:
 * The following images and gif shows the web application's appearance and functionality:
 
+* User Story Prompts
+![User Story Prompts](public/assets/img/userStoryPrompts.png)
+
 * DB: sql files 
 ![db file schema/seeds](public/assets/img/sQLfiles.png)
 
