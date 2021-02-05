@@ -11,10 +11,10 @@ To create an application that can be used to track beef selections and prefences
 * The following images and gif shows the web application's appearance and functionality:
 
 * DB: sql files 
-![db file schema/seeds](public/assets/img/sqlFiles.png)
+![db file schema/seeds](public/assets/img/sQLfiles.png)
 
 * Config: connection/orm.js
-![config file connection/orm](public/assets/img/configFiles.png)
+![config file connection/orm](public/assets/img/conFIGfiles.png)
 
 * Model: burger.js 
   ![models file beer](public/assets/img/beerJS.png)
