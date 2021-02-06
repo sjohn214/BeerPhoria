@@ -52,11 +52,16 @@ To create an application that can be used to track beef selections and prefences
   * beer_style.css
 
 # Special Features Continued:
-  * mySQL
-  * Express
-  * Node
-  * Handlebars
-  * Sequelize
+  * mySQL is an open source relational database management system that is based on the structure query language "allowing the addition, removal and modification of an information database".
+
+  * Node is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript.
+
+  * Express is a popular node web framework library that is primarily responsible for handlers request "routes".
+
+  * Handlebars is a logic-less templating engine that dynamically generates your HTML pages.
+
+  * Sequelize is a mapping dependency that maps between model and a table methods and automatically add their attributes.
+
   * Inquirer
   * Bcrypt.js
   * Arrays with objects
