@@ -189,15 +189,15 @@ VALUES("Hive Fives", "New England-Style Pale Ale", "5.5%ABV", "null", "Citra, Az
 --Price: $6
 ----------------------------------------------------------------
 INSERT INTO beers(beer_name, beer_style, alcohol_content, malt_type, hop_type, beer_taste, beer_pairing, beer_price, ordered)
-VALUES("", "", "", "", "", "", "", , false);
+VALUES("Penguin Pils", "American-Style", "4.8%ABV", "Carolina Pilsner", "Saaz", "Mild floral aroma", "Salmon and Tuna", 8, false);
 --Beer information: 
---Style: Abbey-Style Dubbel
---Alcohol Content: 7.8%ABV
---Malts: Pilsner
---Hops: Czech Saaz
---Taste: Lightly sweetened and subtle with hints of raisin, plum, soft caramel, vanilla, and fruity yeast esters
---Pairing: Pairs with Filet Mignon
---Price: $9
+--Style: American-Style
+--Alcohol Content: 4.8%ABV
+--Malts: Carolina Pilsner
+--Hops: Saaz
+--Taste: Mild floral aroma
+--Pairing: Pairs with Salmon and Tuna 
+--Price: $8
 ----------------------------------------------------------------
 INSERT INTO beers(beer_name, beer_style, alcohol_content, malt_type, hop_type, beer_taste, beer_pairing, beer_price, ordered)
 VALUES("Global Happiness", "Coffee Brown-Style Ale", "4.8%ABV", "null", "null", "Blended coffee and beer", "Roasted Pork and Smoked Sausage", 6, false);
