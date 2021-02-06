@@ -16,7 +16,7 @@ app.set("view engine", "handlebars");
 
 var routes = require("./controllers/beer_controller.js");
 
-app.use(routes);
+// app.use(routes);
 
 app.listen(PORT, function () {
   console.log("App now listening at localhost:" + PORT);
