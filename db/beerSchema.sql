@@ -3,6 +3,7 @@ USE beer_db;
 
 CREATE TABLE beers(
     id INT NOT NULL AUTO_INCREMENT,
+    brewery_name VARCHAR(255) NOT,
     beer_name VARCHAR(100) NOT NULL,
     beer_style VARCHAR(100) NOT NULL,
     alcohol_content VARCHAR(100) NOT NULL,
