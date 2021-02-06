@@ -53,7 +53,9 @@ To create an application that can be used to track beef selections and prefences
 
 # Special Features Continued:
   * mySQL is an open source relational database management system that is based on the structure query language "allowing the addition, removal and modification of an information database".
-
+    * Schemas file
+    * Seed file
+  
   * Node is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript.
 
   * Express is a popular node web framework library that is primarily responsible for handlers request "routes".
@@ -62,17 +64,17 @@ To create an application that can be used to track beef selections and prefences
 
   * Sequelize is a mapping dependency that maps between model and a table methods and automatically add their attributes.
 
-  * Inquirer
-  * Bcrypt.js
-  * Arrays with objects
-  * Jquery language
-  * Schemas file
-  * Seed file
-  * Assests file
+  * Inquirer is a collection of common interactive command line user interfaces.
+  
+  * Bcrypt.js is a npm package used most commonly to work with passwords in JavaScript.
+  
+  * Jquery is an open source JavaScript library that allows web developers to add extra functionality to their websites.
+
+  * Public/Assests file holds style.css framework and beers.js
+  
   * Controller file: holds Router application
-  * Functions
-  * Installed npm package mysql, express-handlebars and express
-  * Installed package-json
+  
+  * Installed npm package-json, mysql, express-handlebars, express, sequelize, bcrypt.js, passport, inquirer, handlebars, etc.
 
 
 # Authors/Contributors
