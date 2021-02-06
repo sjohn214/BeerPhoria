@@ -1,20 +1,70 @@
-var orm = require('../config/orm.js');
+module.exports = function (sequelize, DataTypes){
 
-var beer = {
-    all: function(cb){
-        orm.all("beers", function(res){
-            cb(res);
-        });
+var beer = sequelize.define("beer", {
+   brewery_name: {
+       type: DataTypes.STRING,
+       allowNull: false,
+       validate: {
+           len: [1]
+       }
+   },
+   beer_name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
     },
-    create: function(cols, vals, cb){
-        orm.create("beers", cols, vals, function(res){
-            cb(res);
-        });
+    beer_style: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
     },
-    update: function(objColVals, condition, cb){
-        orm.update("beers", objColVals, condition, function(res){
-            cb(res);
-        });
-    }
-};
-module.exports = beer;
+    alcohol_content: {
+        type: DataTypes.DECIMAL,
+        //type: DataTypes.RANGE(DataTypes.DECIMAL) numeric range//
+        allowNull: false,
+       
+    },
+    malt_type: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+    },
+    hop_type: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+    },
+    beer_taste: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+    },
+    beer_pairing: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1]
+        }
+    },
+    beer_price: {
+        type: DataTypes.DECIMAL,
+        //type: DataTypes.RANGE(DataTypes.DECIMAL) numeric range//
+        allowNull: false,
+        
+    },
+    ordered: {
+        allowNull: false
+    },
+});
+return beer;
+}
