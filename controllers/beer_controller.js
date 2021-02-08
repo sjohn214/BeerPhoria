@@ -12,9 +12,9 @@ router.get("/", (req, res) => {
   });
 });
 //////////////////////////////////////////////////////////////////////////
-// This will POST the burgers to the db
+
 router.post("/beers/create", (req, res) => {
-  beer.create(["beer_name", "beer_style","alcohol_content","beer_taste","beer_pairing","ordered"], 
+  beer.create(["brewery_name","beer_name", "beer_style","alcohol_content","beer_taste","beer_pairing","ordered"], 
   [req.body.name, req.body. false], (result) => {
     res.json({ result });
   });

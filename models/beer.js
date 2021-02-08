@@ -1,3 +1,5 @@
+const { Sequelize } = require("sequelize/types");
+
 module.exports = function (sequelize, DataTypes){
 
 var beer = sequelize.define("beer", {
@@ -23,10 +25,9 @@ var beer = sequelize.define("beer", {
         }
     },
     alcohol_content: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(2,1),
         //type: DataTypes.RANGE(DataTypes.DECIMAL) numeric range//
         allowNull: false,
-       
     },
     malt_type: {
         type: DataTypes.STRING,
@@ -57,13 +58,15 @@ var beer = sequelize.define("beer", {
         }
     },
     beer_price: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(10,2),
         //type: DataTypes.RANGE(DataTypes.DECIMAL) numeric range//
         allowNull: false,
         
     },
     ordered: {
-        allowNull: false
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false
     },
 });
 return beer;
