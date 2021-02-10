@@ -6,7 +6,7 @@ CREATE TABLE beers(
     brewery_name VARCHAR(100) NOT,
     beer_name VARCHAR(100) NOT NULL,
     beer_style VARCHAR(100) NOT NULL,
-    alcohol_content DECIMAL(10,2) NOT NULL,
+    alcohol_content DECIMAL(2,1) NOT NULL,
     malt_type VARCHAR(100) NOT NULL,
     hop_type VARCHAR(100) NOT NULL,
     beer_taste VARCHAR(100) NOT NULL,
