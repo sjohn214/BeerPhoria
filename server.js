@@ -1,6 +1,6 @@
 var express = require("express");
 var session = require("express-session");
-
+var passport = require("./config/passport");
 var PORT = process.env.PORT || 4000;
 
 var app = express();
