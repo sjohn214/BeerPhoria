@@ -25,7 +25,7 @@ var beer = sequelize.define("beer", {
         }
     },
     alcohol_content: {
-        type: DataTypes.DECIMAL(2,1),
+        type: DataTypes.DECIMAL(10,2),
         //type: DataTypes.RANGE(DataTypes.DECIMAL) numeric range//
         allowNull: false,
     },
