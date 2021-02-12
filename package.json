@@ -24,6 +24,7 @@
     "mysql2": "^2.2.5",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "puzzy-search": "^1.0.20",
     "sequelize": "^6.5.0"
   }
 }

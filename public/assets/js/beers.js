@@ -1,4 +1,3 @@
-var inquirer= require('inquirer');
 const { search, suggest, regex } = require('puzzy-search');
 
 var  str = document.querySelector('#search');
@@ -20,4 +19,3 @@ btnSearch.addEventListener('click', () => {
         }).catch(e  =>  console.log(e))
 });
 
-inquirer();
