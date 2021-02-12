@@ -1,7 +1,7 @@
 var express = require("express");
 var session = require("express-session");
 var passport = require("./config/passport");
-var PORT = process.env.PORT || 4000;
+var PORT = process.env.PORT || 8000;
 
 var app = express();
 
@@ -29,8 +29,8 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Import routes and give the server access to them.
-var routes = require("./controllers/beer_controller.js");
-app.use(routes);
+//var routes = require("./controllers/beer_controller.js");
+//app.use(routes);
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({ force: true }).then(function() {
