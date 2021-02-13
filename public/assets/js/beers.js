@@ -6,32 +6,32 @@ const { search, suggest, regex } = puzzySearch
     var  resultList = document.querySelector('#result')
 
 
- const sentence = 'You want the web server to support four of the most popular programming paradigms.'
+ const sentence = 'Searching for beers...? See what we have on tap!'
  
- search(str, sentence) // true
+ search(str.value, sentence) // true
  
- suggest(str, sentence) // popular programming paradigm
+ suggest(str.value, sentence) // popular beers
  
- regex(str) // new RegExp(...puzzy...)
+ regex(str.value) // new RegExp(...puzzy...)
  
-sentence.match(regex(str)) !== null // true
+sentence.match(regex(str.value)) !== null // true
     str.addEventListener('input', () => {
         if (search(str.value))
             suggestion.innerHTML = `Did you mean: ${suggest(str.value)}`
         else
             suggestion.innerHTML = ''
     });
-    
-
-       var searchValue=  $("#search").val();
 
 
         $("#btnSearch").on("click", function (){
+            var searchValue= $("#search").val();
+                console.log(searchValue);
         $.ajax({
             method: 'GET',
-            url: '/api/beer?q=' + searchValue ,
-            dataType: beerData,
+            url: '/api/beer?q=' + searchValue,
             success: function(data) {
+                // cityHistory.push(searchValue)
+                console.log(data);
             }
         })
         } );
