@@ -68,6 +68,6 @@ var beer = sequelize.define("beer", {
         allowNull: false,
         defaultValue: false
     },
-});
+},{timestamps: false});
 return beer;
 }

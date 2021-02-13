@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
     var hbsObject = {
       beers: data
     };
-
+console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });

@@ -6,11 +6,11 @@ module.exports = function(app) {
 
   app.get("/", function(req, res) {
     db.beer.findAll({}).then(data => {
-        // var hbsObject = {
-        //   beers: data
-        // };
-    
-        res.render("index",{beerData:data});
+        var hbsObject = {
+          beerData: data
+        };
+    console.log(hbsObject);
+        res.render("index",hbsObject);
       });
     //if (req.user) {
     //   res.redirect("/members");

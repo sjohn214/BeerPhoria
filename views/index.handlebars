@@ -5,18 +5,24 @@
 <span  id="didyoumean"></span> 
 
 
-  <form id=result>
+  <form id="result">
     <div class="container">
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/assets/img/moonRiver.png" alt="Card image cap"><br>
         <div class="card-body">
           <h5 class="card-title">Yoga Pants</h5>
           <p class="card-text">
-            Malts: Pilsner, Wheat<br>
+            <ul>
+            {{#if beerData}}
+            {{dataValues.id}}
+            {{!-- Malts: Pilsner, Wheat<br>
             Hops: Mosaic, Nelson Sauvin, Idaho 7<br>
             Taste: Not to bitter, sophisticated malt profile and brazen hoppiness<br>
             Pairing: Pairs with Chicken Sandwiches or Stuffed Mushrooms<br>
-            Style: Southern-Style Pale Ale</p>
+            Style: Southern-Style Pale Ale --}}
+            {{/if}}
+            </ul>
+            </p>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Alcohol Content: 5.0%ABV</li>

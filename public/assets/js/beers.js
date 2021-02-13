@@ -1,4 +1,3 @@
-
 const { search, regex, suggest } = require('puzzy-search')
 
     var  str = document.querySelector('#search')
@@ -19,3 +18,12 @@ const { search, regex, suggest } = require('puzzy-search')
                 resultList.innerHTML = data.map(r  =>  `<li>${r.sampleName}</li>`).join('')
             }).catch(e  =>  console.log(e))
     });
+
+
+// $("#search").val();
+// $("#btnSearch").on("click", function (){
+// $.ajax({
+//     method: 'GET',
+//     url: 'api/beers'
+// })
+// } );
