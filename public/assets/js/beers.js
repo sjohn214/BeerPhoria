@@ -1,4 +1,4 @@
-const { search, regex, suggest } = require('puzzy-search')
+const { search, suggest, regex } = puzzySearch
 
     var  str = document.querySelector('#search')
     var  btnSearch = document.querySelector('#btnSearch')
