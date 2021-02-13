@@ -6,17 +6,17 @@ const { search, suggest, regex } = puzzySearch
     var  resultList = document.querySelector('#result')
 
 
- const sentence = 'Searching for beers...? See what we have on tap!'
+ let sentence = 'Searching for beers...? See what we have on tap!'
  
  search(str.value, sentence) // true
  
  suggest(str.value, sentence) // popular beers
  
  regex(str.value) // new RegExp(...puzzy...)
- 
-sentence.match(regex(str.value)) !== null // true
+ console.log(sentence.match);
+sentence.match(regex(str.value)) !== null;
     str.addEventListener('input', () => {
-        if (search(str.value))
+        if (search(str.value, sentence))
             suggestion.innerHTML = `Did you mean: ${suggest(str.value)}`
         else
             suggestion.innerHTML = ''
@@ -30,8 +30,7 @@ sentence.match(regex(str.value)) !== null // true
             method: 'GET',
             url: '/api/beer?q=' + searchValue,
             success: function(data) {
-                // cityHistory.push(searchValue)
-                console.log(data);
+                // newDivnameNeeded.push(searchValue);
             }
         })
         } );
