@@ -11,19 +11,12 @@ const { search, suggest, regex } = puzzySearch
             suggestion.innerHTML = ''
     });
     
-    btnSearch.addEventListener('click', () => {
-        regex = regex(str.value)
-        fetch('api.php?regex=' + regex)
-            .then(res  =>  res.json()).then(data  => {
-                resultList.innerHTML = data.map(r  =>  `<li>${r.sampleName}</li>`).join('')
-            }).catch(e  =>  console.log(e))
-    });
 
-
-// $("#search").val();
-// $("#btnSearch").on("click", function (){
-// $.ajax({
-//     method: 'GET',
-//     url: 'api/beers'
-// })
-// } );
+        $("#search").val();
+        $("#btnSearch").on("click", function (){
+        $.ajax({
+            method: 'GET',
+            url: 'routes/beer-api-routes',
+            data: beerData
+        })
+        } );
