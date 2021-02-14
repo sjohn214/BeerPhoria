@@ -14,19 +14,22 @@ module.exports = function(app) {
     console.log(req.query.q);
     if (req.query.q) {
       query.beer_name = req.query.q;
+      res.redirect("/beers/"+req.query.q);
     }
-    
+    // else {
+    //   res.json (true);
+    // }
     // Here we add an "include" property to our options in our findAll query
     // We set the value to an array of the models we want to include in a left outer join
     // In this case, just db.Author
-    db.beer.findAll({
-      where: query,
+    // db.beer.findAll({
+    //   where: query,
 
       
-    }).then(function(dbbeer) {
-      res.json(dbbeer);
-      console.log(dbbeer);
-    });
+    // }).then(function(dbbeer) {
+    //   res.json(dbbeer);
+    //   console.log(dbbeer);
+    // });
   });
   
   // Get route for retrieving a single beer
@@ -43,11 +46,11 @@ module.exports = function(app) {
     });
   });
   // beer route for saving a new beer
-  app.post("/api/beer", function(req, res) {
-    db.beer.create(req.body).then(function(dbbeer) {
-      res.json(dbbeer);
-    });
-  });
+  // app.post("/api/beer", function(req, res) {
+  //   db.beer.create(req.body).then(function(dbbeer) {
+  //     res.json(dbbeer);
+  //   });
+  // });
   // DELETE route for deleting beers
   app.delete("/api/beer/:id", function(req, res) {
     db.beer.destroy({

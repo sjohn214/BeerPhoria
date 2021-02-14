@@ -8,13 +8,14 @@
   <form id="result">
     
     <div class="container">
+      {{#each beerData}}
     <div class="card" style="width: 18rem;">
         {{!-- <img class="card-img-top" src="/assets/img/moonRiver.png" alt="Card image cap"><br> --}}
 
         <div class="card-body">
           <h5 class="card-title"></h5>
-          {{#each beerData}}
-          {{#if searchValue.beer_name}}
+          
+          {{!-- {{#if searchValue.beer_name}} --}}
           <p class="card-text">
             <h1 class="beerName">{{this.dataValues.beer_name}}</h1>
           
@@ -28,8 +29,8 @@
             <p class="beerData">Price:{{this.dataValues.beer_price}}</p>
           
             </p>
-            {{/if}}
-            {{/each}}
+            {{!-- {{/if}} --}}
+           
         
         <ul class="list-group list-group-flush"></ul>
        </div>
@@ -38,6 +39,7 @@
           <a href="https://www.moonriverbrewing.com/beer" class="card-link">Link to beer</a>
         </div> --}}
      </div>
+     {{/each}}
      </div>
   </form>
 

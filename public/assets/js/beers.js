@@ -26,12 +26,19 @@ sentence.match(regex(str.value)) !== null;
            // debugger;
             var searchValue= $("#search").val();
                 //console.log(searchValue);
-        $.ajax({
-            method: 'GET',
-            url: '/api/beer?q=' + searchValue,
-            success: function(data) {
-               console.log(data);
-                //  newDiv.push(searchValue);
-            }
-        })
+        // $.ajax({
+        //     method: 'GET',
+        //     url: '/api/beer?q=' + searchValue,
+        //     success: function(data) {
+        //        console.log(data);
+        //         //  newDiv.push(searchValue);
+        //     }
+        // })
+
+        if (searchValue){
+            location.replace("/beers/"+searchValue);
+        }
+        else{
+            location.replace("/");
+        }
         } );
