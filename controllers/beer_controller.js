@@ -2,15 +2,15 @@ var express = require("express");
 var router = express.Router();
 var beer = require("../models/beer.js");
 
-router.get("/", (req, res) => {
-  beer.all((data) => {
-    var hbsObject = {
-      beers: data
-    };
-console.log(hbsObject);
-    res.render("index", hbsObject);
-  });
-});
+// router.get("/", (req, res) => {
+//   beer.all((data) => {
+//     var hbsObject = {
+//       beers: data
+//     };
+// console.log(hbsObject);
+//     res.render("index", hbsObject);
+//   });
+// });
 //////////////////////////////////////////////////////////////////////////
 
 router.post("/beers/create", (req, res) => {

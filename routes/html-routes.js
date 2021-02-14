@@ -10,7 +10,6 @@ module.exports = function(app) {
           beerData: data
         };
     console.log(hbsObject);
-    console.log(hbsObject);
         res.render("index",hbsObject);
       });
     //if (req.user) {
