@@ -22,17 +22,16 @@ sentence.match(regex(str.value)) !== null;
             suggestion.innerHTML = ''
     });
 
-
         $("#btnSearch").on("click", function (){
-            //debugger;
+           // debugger;
             var searchValue= $("#search").val();
-                console.log(searchValue);
+                //console.log(searchValue);
         $.ajax({
             method: 'GET',
             url: '/api/beer?q=' + searchValue,
             success: function(data) {
-                //debugger;
-                // newDivnameNeeded.push(searchValue);
+               console.log(data);
+                 newDiv.push(searchValue);
             }
         })
         } );
