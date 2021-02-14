@@ -31,7 +31,7 @@ sentence.match(regex(str.value)) !== null;
             url: '/api/beer?q=' + searchValue,
             success: function(data) {
                console.log(data);
-                 newDiv.push(searchValue);
+                //  newDiv.push(searchValue);
             }
         })
         } );
