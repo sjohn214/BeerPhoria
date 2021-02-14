@@ -14,10 +14,10 @@
         <div class="card-body">
           <h5 class="card-title"></h5>
           {{#each beerData}}
-          {{!-- {{#if searchValue.beer_name}} --}}
+          {{#if searchValue.beer_name}}
           <p class="card-text">
             <h1 class="beerName">{{this.dataValues.beer_name}}</h1>
-            {{!-- <ul> --}}
+          
             <p class="beerData">Brewery: {{this.dataValues.brewery_name}}</p>
             <p class="beerData">Style:{{this.dataValues.beer_style}}</p>
             <p class="beerData">Alcohol Content:{{this.dataValues.alcohol_content}}</p>
@@ -26,9 +26,9 @@
             <p class="beerData">Beer Taste:{{this.dataValues.beer_taste}}</p>
             <p class="beerData">Pairing:{{this.dataValues.beer_pairing}}</p>
             <p class="beerData">Price:{{this.dataValues.beer_price}}</p>
-            {{!-- </ul> --}}
+          
             </p>
-            {{!-- {{/if}} --}}
+            {{/if}}
             {{/each}}
         
         <ul class="list-group list-group-flush"></ul>

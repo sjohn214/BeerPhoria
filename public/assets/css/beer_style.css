@@ -9,6 +9,10 @@
     height: 200px;
 }
 
+#search{
+    margin-left: 50px;
+}
+
 .beerData{
     margin-left: 50px;
 }
