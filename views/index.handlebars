@@ -12,19 +12,19 @@
 
         <div class="card-body">
           
-          <h5 class="card-title">Yoga Pants</h5>
+          <h5 class="card-title"></h5>
           {{#each beerData}}
           <p class="card-text">
+            <h1>{{this.dataValues.beer_name}}</h1>
             <ul>
-            {{beerData.[0].dataValues.brewery_name}}
-            {{beerData.[0].dataValues.beer_name}}
-            {{beerData.[0].dataValues.beer_style}}
-            {{beerData.[0].dataValues.alcohol_content}}
-            {{beerData.[0].dataValues.malt_type}}
-            {{beerData.[0].dataValues.hop_type}}
-            {{beerData.[0].dataValues.beer_taste}}
-            {{beerData.[0].dataValues.beer_pairing}}
-            {{beerData.[0].dataValues.beer_price}}
+            <li>{{this.dataValues.brewery_name}}</li>
+            <li>{{this.dataValues.beer_style}}</li>
+            <li>{{this.dataValues.alcohol_content}}</li>
+            <li>{{this.dataValues.malt_type}}</li>
+            <li>{{this.dataValues.hop_type}}</li>
+            <li>{{this.dataValues.beer_taste}}</li>
+            <li>{{this.dataValues.beer_pairing}}</li>
+            <li>{{this.dataValues.beer_price}}</li>
             </ul>
             </p>
             {{/each}}
