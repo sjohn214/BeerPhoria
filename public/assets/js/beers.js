@@ -24,12 +24,14 @@ sentence.match(regex(str.value)) !== null;
 
 
         $("#btnSearch").on("click", function (){
+            //debugger;
             var searchValue= $("#search").val();
                 console.log(searchValue);
         $.ajax({
             method: 'GET',
             url: '/api/beer?q=' + searchValue,
             success: function(data) {
+                //debugger;
                 // newDivnameNeeded.push(searchValue);
             }
         })
