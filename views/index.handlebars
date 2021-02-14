@@ -6,15 +6,17 @@
 
 
   <form id="result">
-    <form id="result">
-  
+    
+    {{#each this}}  
     <div class="container">
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/assets/img/moonRiver.png" alt="Card image cap"><br>
         <div class="card-body">
+          
           <h5 class="card-title">Yoga Pants</h5>
           <p class="card-text">
             <ul>
+            
             {{beerData.[0].dataValues.brewery_name}}
             {{beerData.[0].dataValues.beer_name}}
             {{beerData.[0].dataValues.beer_style}}
@@ -24,23 +26,18 @@
             {{beerData.[0].dataValues.beer_taste}}
             {{beerData.[0].dataValues.beer_pairing}}
             {{beerData.[0].dataValues.beer_price}}
-            
-            {{!-- Malts: Pilsner, Wheat<br>
-            Hops: Mosaic, Nelson Sauvin, Idaho 7<br>
-            Taste: Not to bitter, sophisticated malt profile and brazen hoppiness<br>
-            Pairing: Pairs with Chicken Sandwiches or Stuffed Mushrooms<br>
-            Style: Southern-Style Pale Ale --}}
-            
+             
             </ul>
             </p>
         </div>
         <ul class="list-group list-group-flush">
         </ul>
+       
         <div class="card-body">
           <a href="https://www.moonriverbrewing.com" class="card-link">Link to brewery</a><br>
           <a href="https://www.moonriverbrewing.com/beer" class="card-link">Link to beer</a>
         </div>
-        
+        {{/each}}
       </div>
 
 
