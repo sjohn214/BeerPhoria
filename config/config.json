@@ -1,6 +1,9 @@
 {
     "development": {
-      "use_env_variable": "LOCAL_HOST",
+      "username": "bzjotke6kk834hpt",
+      "password": "l7qz0sib88o9ad4z",
+      "database": "n1e0z74c6u5tu8w6",
+      "host": "z3iruaadbwo0iyfp.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
       "dialect": "mysql"
     },
     "test": {
@@ -9,10 +12,11 @@
       "database": "beer_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
-    },
-    "production": {
-      "use_env_variable": "JAWSDB_URL",
-      "dialect": "mysql"
     }
+    // ,
+    // "production": {
+    //   "use_env_variable": "JAWSDB_URL",
+    //   "dialect": "mysql"
+    // }
   }
   
