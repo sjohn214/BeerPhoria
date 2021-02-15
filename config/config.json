@@ -4,7 +4,6 @@
     "password": "rootingABC1",
     "database": "beer_db",
     "host": "127.0.0.1",
-    "use_env_variable": "localhostproject2",
     "dialect": "mysql"
   },
  
