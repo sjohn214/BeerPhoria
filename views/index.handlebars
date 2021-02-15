@@ -1,47 +1,37 @@
+<input id="search" type="text" placeholder="Search">
+<button id="btnSearch">Search</button>
+<br />
+<span id="didyoumean"></span>
 
-<input  id="search"  type="text"  placeholder="Search">
-<button  id="btnSearch">Search</button>
-<br/>
-<span  id="didyoumean"></span> 
-
-
-  <form id="result">
-    
-    <div class="container">
-      {{#each beerData}}
+<form id="result">
+  <div class="container">
+    {{#each beerData}}
     <div class="card" style="width: 18rem;">
-        {{!-- <img class="card-img-top" src="/assets/img/moonRiver.png" alt="Card image cap"><br> --}}
-
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          
-          {{!-- {{#if searchValue.beer_name}} --}}
-          <p class="card-text">
-            <h1 class="beerName">{{this.dataValues.beer_name}}</h1>
-          
-            <p class="beerData">Brewery: {{this.dataValues.brewery_name}}</p>
-            <p class="beerData">Style:{{this.dataValues.beer_style}}</p>
-            <p class="beerData">Alcohol Content:{{this.dataValues.alcohol_content}}</p>
-            <p class="beerData">Malt Type:{{this.dataValues.malt_type}}</p>
-            <p class="beerData">Hop Type:{{this.dataValues.hop_type}}</p>
-            <p class="beerData">Beer Taste:{{this.dataValues.beer_taste}}</p>
-            <p class="beerData">Pairing:{{this.dataValues.beer_pairing}}</p>
-            <p class="beerData">Price:{{this.dataValues.beer_price}}</p>
-          
-            </p>
-            {{!-- {{/if}} --}}
-           
-        
-        <ul class="list-group list-group-flush"></ul>
-       </div>
-        {{!-- <div class="card-body">
-          <a href="https://www.moonriverbrewing.com" class="card-link">Link to brewery</a><br>
-          <a href="https://www.moonriverbrewing.com/beer" class="card-link">Link to beer</a>
-        </div> --}}
-     </div>
-     {{/each}}
-     </div>
-  </form>
-
-
-      
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">
+        <h1 class="beerName">{{this.dataValues.beer_name}}</h1>
+        <p class="beerData">Brewery: {{this.dataValues.brewery_name}}</p>
+        <p class="beerData">Style:{{this.dataValues.beer_style}}</p>
+        <p class="beerData">Alcohol Content:{{this.dataValues.alcohol_content}}</p>
+        <p class="beerData">Malt Type:{{this.dataValues.malt_type}}</p>
+        <p class="beerData">Hop Type:{{this.dataValues.hop_type}}</p>
+        <p class="beerData">Beer Taste:{{this.dataValues.beer_taste}}</p>
+        <p class="beerData">Pairing:{{this.dataValues.beer_pairing}}</p>
+        <p class="beerData">Price:{{this.dataValues.beer_price}}</p>
+        </p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</form>
+<br>
+<form>
+  
+  <div class="form-group">
+    <label for="beerName" class="beerName">Beer Name</label>
+    <input type="beer" class="form-control beerName" id="beerExample" aria-describedby="beerHelp" placeholder="Enter beerName">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <button type="submit" class="btn btn-primary beerName">Submit</button>
+</form>
