@@ -40,13 +40,12 @@ $('.create-btn').on('click', function (event) {
       var beerInfo = {
         beer_name: nameInput,
       };
-     // console.log(beerInfo);
       $.ajax({
         method: 'POST',
         url: '/api/beers/create',
         data: beerInfo,
       }).then(function (data) {
-        // reload page to display devoured burger in proper column
+        // reload page to display devoured beers in proper column
         location.reload();
       });
     }
