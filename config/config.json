@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "mylocalservermySQL",
+    "username": "root",
     "password": "rootingABC1",
     "database": "beer_db",
     "host": "127.0.0.1",
