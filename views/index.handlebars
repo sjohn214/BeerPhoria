@@ -4,8 +4,9 @@
 <span id="didyoumean"></span>
 
 <form id="result">
+  <div class="row">
+  <div class="column">
   <div class="card">
-    <div class="container">
     {{#each beerData}}
         <h5 class="card-title"></h5>
         <p class="card-text">
@@ -21,11 +22,12 @@
         <li class="beerData">Price: {{this.dataValues.beer_price}}</li>
         </ul>
       </div>
+      </div>
     {{/each}}
   </div>
 </form>
-<br>
-<br>
+<br />
+<br />
 
 
 <hr>
