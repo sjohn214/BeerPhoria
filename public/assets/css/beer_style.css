@@ -23,13 +23,16 @@ margin: center;
 }
 .column {
     float: left;
-    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
     text-align: left;
     font-size: 9pt;
     margin: auto 10px;
   }
 .card {
     margin: 20px;
+    min-width: 300px;
 }
 
 .row:after {
