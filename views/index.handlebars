@@ -4,10 +4,9 @@
 <span id="didyoumean"></span>
 
 <form id="result">
-  <div class="container">
+  <div class="card">
+    <div class="container">
     {{#each beerData}}
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
         <h5 class="card-title"></h5>
         <p class="card-text">
         <h1 class="beerName">{{this.dataValues.beer_name}}</h1>
@@ -22,11 +21,12 @@
         <li class="beerData">Price: {{this.dataValues.beer_price}}</li>
         </ul>
       </div>
-    </div>
     {{/each}}
   </div>
 </form>
 <br>
+<br>
+
 
 <hr>
 
