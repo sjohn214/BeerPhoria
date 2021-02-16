@@ -1,5 +1,5 @@
-<input id="search" type="text" placeholder="Search">
-<button id="btnSearch">Search</button>
+<input id="search" type="text" placeholder="search..." class="search">
+<button id="btnSearch" class="searchbtn">Search!</button>
 <br />
 <span id="didyoumean"></span>
 
@@ -11,15 +11,16 @@
         <h5 class="card-title"></h5>
         <p class="card-text">
         <h1 class="beerName">{{this.dataValues.beer_name}}</h1>
-        <p class="beerData">Brewery: {{this.dataValues.brewery_name}}</p>
-        <p class="beerData">Style:{{this.dataValues.beer_style}}</p>
-        <p class="beerData">Alcohol Content:{{this.dataValues.alcohol_content}}</p>
-        <p class="beerData">Malt Type:{{this.dataValues.malt_type}}</p>
-        <p class="beerData">Hop Type:{{this.dataValues.hop_type}}</p>
-        <p class="beerData">Beer Taste:{{this.dataValues.beer_taste}}</p>
-        <p class="beerData">Pairing:{{this.dataValues.beer_pairing}}</p>
-        <p class="beerData">Price:{{this.dataValues.beer_price}}</p>
-        </p>
+        <ul>
+        <li class="beerData">Brewery: {{this.dataValues.brewery_name}}</li>
+        <li class="beerData">Style: {{this.dataValues.beer_style}}</li>
+        <li class="beerData">Alcohol Content: {{this.dataValues.alcohol_content}}</li>
+        <li class="beerData">Malt Type: {{this.dataValues.malt_type}}</li>
+        <li class="beerData">Hop Type: {{this.dataValues.hop_type}}</li>
+        <li class="beerData">Beer Taste: {{this.dataValues.beer_taste}}</li>
+        <li class="beerData">Pairing:{ {this.dataValues.beer_pairing}}</li>
+        <li class="beerData">Price: {{this.dataValues.beer_price}}</li>
+        </ul>
       </div>
     </div>
     {{/each}}
@@ -27,11 +28,17 @@
 </form>
 <br>
 
+<hr>
+
+<center>
 <form>
+  <div class="form-style">
   <div class="form-group">
-    <label for="beerName" class="beerName">Beer Name</label>
-    <input type="beer" class="form-control beerName" id="beerExample" aria-describedby="beerHelp" placeholder="Enter beerName">
+    <label for="beerName" class="beerName-form">Beer Name</label><br>
+    <input type="beer" class="form-control beerName" id="beerExample" aria-describedby="beerHelp" placeholder="Enter beerName"><br>
     <small id="emailHelp" class="form-text text-muted"></small>
   </div>
   <button type="submit" class="btn btn-primary create-btn">Submit</button>
+  </div>
 </form>
+</center>
