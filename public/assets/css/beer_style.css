@@ -32,7 +32,7 @@ margin: center;
     margin: 20px;
 }
 
-  .row:after {
+.row:after {
     display: table;
   }
 
@@ -96,7 +96,7 @@ footer {
     text-align: center;
 }
 
-.contributers {
+.contributors {
     text-decoration: underline;
 }
 
