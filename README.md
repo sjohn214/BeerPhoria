@@ -11,7 +11,7 @@ To create an application that can be used to track beef selections and prefences
 * The following images and gif shows the web application's appearance and functionality:
 
 * User Story Prompts
-![User Story Prompts](public/assets/img/userStoryPrompts.png)
+![User Story Prompts](public/assets/img/userStory.png)
 
 * DB: sql files 
 ![db file schema/seeds](public/assets/img/sQLfiles.png)
@@ -25,10 +25,13 @@ To create an application that can be used to track beef selections and prefences
 * Demo gif
 ![BeerPhoria gif](.gif)
 
+
 # Live URL:
 <a href="hhttps://beerphoria.herokuapp.com//">BeerPhoria Heroku App</a>
 
 <a href="https://github.com/sjohn214/BeerPhoria.git">BeerPhoria GitHub Repo</a>
+
+<a href="https://youtu.be/f7_0ZW0zufY">BeerPhoria demo video</a>
 
 # Summary
 
@@ -39,17 +42,18 @@ To create an application that can be used to track beef selections and prefences
 
   * main/index.handlebars
   
-  ![main/index](.png)
+  ![main/index](public/assets/img/mainINDEX.png.png)
 
 
 * 5 Javascript pages
   
   * server.js
   
-![server file](.png)
+![server file](public/assets/img/serverJS.png.png)
 
 * 1 Style Framework page
   * beer_style.css
+
 
 # Special Features Continued:
   * mySQL is an open source relational database management system that is based on the structure query language "allowing the addition, removal and modification of an information database".
