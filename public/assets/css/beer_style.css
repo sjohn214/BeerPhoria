@@ -84,7 +84,7 @@ hr {
 margin-top: 10px;
 max-width: 200px;
 text-align: center;
-display: center;
+display: inline-flex;
 }
 
 .btn {
