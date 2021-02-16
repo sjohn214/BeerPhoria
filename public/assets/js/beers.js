@@ -5,7 +5,6 @@ var btnSearch = document.querySelector('#btnSearch')
 var suggestion = document.querySelector('#didyoumean')
 var resultList = document.querySelector('#result')
 
-
 let sentence = 'Searching for beers...? See what we have on tap!'
 
 search(str.value, sentence) // true
@@ -32,24 +31,22 @@ $("#btnSearch").on("click", function () {
     }
 });
 
-$('.create-btn').on('click', function (event) {
-    event.preventDefault();
-
-    var nameInput = $(this).siblings('[name=beer_name]').val();
-    if (nameInput) {
-      var beerInfo = {
-        beer_name: nameInput,
-      };
-      $.ajax({
-        method: 'POST',
-        url: '/api/beers/create',
-        data: beerInfo,
-      }).then(function (data) {
-        // reload page to display devoured beers in proper column
-        location.reload();
-      });
-    }
-  });
-
+  ////////////////////   POST   ///////////////////////////////////
+$('form').on('submit', function (event) {
+  var nameInput = $('#beerExample').val();
+  if (nameInput) {
+    var beerInfo = {
+      beer_name: nameInput,
+    };
+    $.ajax({
+      method: 'POST',
+      url: '/api/beers/create',
+      data: beerInfo,
+    }).then(function (data) {
+      console.log(data);
+      location.reload();
+    });
+  }
+});
 
  
