@@ -31,8 +31,8 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-// var routes = require("./controllers/beer_controller.js");
-// app.use(routes);
+var routes = require("./controllers/beer_controller.js");
+app.use(routes);
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({ force: false }).then(function() {
