@@ -6,8 +6,8 @@
 <form id="result">
   <div class="row">
   <div class="column">
-  <div class="card">
     {{#each beerData}}
+    <div class="card">
         <h5 class="card-title"></h5>
         <p class="card-text">
         <h1 class="beerName">{{this.dataValues.beer_name}}</h1>
@@ -22,8 +22,8 @@
         <li class="beerData">Price: {{this.dataValues.beer_price}}</li>
         </ul>
       </div>
-      </div>
     {{/each}}
+    </div>
   </div>
 </form>
 <br />
