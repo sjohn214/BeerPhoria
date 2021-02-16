@@ -62,12 +62,7 @@ var beer = sequelize.define("beer", {
         //type: DataTypes.RANGE(DataTypes.DECIMAL) numeric range//
         allowNull: false,
         
-    },
-    ordered: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false,
-        defaultValue: false
-    },
+    }
 },{timestamps: false});
 return beer;
 }
