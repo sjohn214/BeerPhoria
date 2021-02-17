@@ -1,6 +1,6 @@
 # BeerPhoria
 
-The purpose of this application is to create a beer logger with MySQL, Node, Express, Handlebars, Sequelize and a homemade ORM. This project will follow the MVC design pattern by using Node and MySQL to query and route data in the application, and Handlebars to generate the HTML.
+The purpose of this application is to create a beer logger with MySQL, Node, Express, Handlebars, and Sequelize. This project will follow the MVC design pattern by using Node and MySQL to query and route data in the application, and Handlebars to generate the HTML.
 
 
 # Project Description
@@ -17,7 +17,7 @@ To create an application that can be used to track beer selections and prefences
 ![db file schema/seeds](public/assets/img/sQLfiles.png)
 
 * Config: config.json
-![config file connection/orm](public/assets/img/conFIGfiles.png)
+![config file](public/assets/img/conFIGfiles.png)
 
 * Model: beer.js 
   ![models file beer](public/assets/img/beerJS.png)
