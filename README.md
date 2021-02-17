@@ -27,7 +27,7 @@ To create an application that can be used to track beer selections and prefences
 
 
 # Live URL:
-<a href="hhttps://beerphoria.herokuapp.com//">BeerPhoria Heroku App</a>
+<a href="https://beerphoria.herokuapp.com/">BeerPhoria Heroku App</a>
 
 <a href="https://github.com/sjohn214/BeerPhoria.git">BeerPhoria GitHub Repo</a>
 
