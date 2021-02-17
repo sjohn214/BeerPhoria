@@ -4,7 +4,7 @@ The purpose of this application is to create a beer logger with MySQL, Node, Exp
 
 
 # Project Description
-To create an application that can be used to track beef selections and prefences that can be ordered and remembered for future visits. Application will connect remotely to a Heroku database and will feature Node, Express, MySQL, Sequelize and Handlebars.
+To create an application that can be used to track beer selections and prefences that can be  viewed and remembered for future visits. Application will connect remotely to a Heroku database and will feature Node, Express, MySQL, Sequelize and Handlebars.
 
 
 # Demo Features:
@@ -13,17 +13,17 @@ To create an application that can be used to track beef selections and prefences
 * User Story Prompts
 ![User Story Prompts](public/assets/img/userStory.png)
 
-* DB: sql files 
+* DB: Workbench from schema and seed files
 ![db file schema/seeds](public/assets/img/sQLfiles.png)
 
-* Config: connection/orm.js
+* Config: config.json
 ![config file connection/orm](public/assets/img/conFIGfiles.png)
 
-* Model: burger.js 
+* Model: beer.js 
   ![models file beer](public/assets/img/beerJS.png)
 
 * Demo gif
-![BeerPhoria gif](.gif)
+![BeerPhoria gif](public/assets/img/beerPhoria.gif)
 
 
 # Live URL:
@@ -35,25 +35,26 @@ To create an application that can be used to track beef selections and prefences
 
 # Summary
 
-* In this project we created an application that will allow users to dynamically interact with a beer selection program. Users will "select" options based on taste prefences and based on the results, a beer will be presented to reflect the user's selections. Application will include a "tab" style component that allows the user to retain a history of previous selections. As a bonus if time permits, application could feature a recommendation option for users who are unsure of what beers they prefer.
+* In this project we created an application that will allow users to dynamically interact with a beer selection program. Users will "select" a beer "type beer name" and based on taste prefences view the results. A beer will be presented to reflect the user's selections. Future development for the application will include a "tab" style component that allows the user to retain a history of previous selections. As a bonus if time permits, application could feature a recommendation option for users who are unsure of what beers they prefer.
 
 # Special Features:
 * 2 html rendering Handlebars pages
 
   * main/index.handlebars
   
-  ![main/index](public/assets/img/mainINDEX.png.png)
+  ![main/index](public/assets/img/mainINDEX.png)
 
 
-* 5 Javascript pages
+* 13 Javascript/Routes pages
   
   * server.js
   
-![server file](public/assets/img/serverJS.png.png)
+![server file](public/assets/img/serverJS.png)
 
 * 1 Style Framework page
   * beer_style.css
 
+![style file](public/assets/img/stylingCSS.png)
 
 # Special Features Continued:
   * mySQL is an open source relational database management system that is based on the structure query language "allowing the addition, removal and modification of an information database".
